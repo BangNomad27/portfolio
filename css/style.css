@@ -541,23 +541,47 @@ footer {
 	.banner .textBox h3 {
 		font-size: 1em;
 	}
+	/* * Area About */
+	.content {
+		flex-direction: column;
+	}
+	.content .aboutBox {
+		margin-left: 0;
+	}
+	.content .aboutBox p {
+		font-size: 1rem;
+	}
+	.pict .img {
+		position: relative;
+	}
+	/* * Area Skills */
+	.content .skillBox {
+		margin: 0 20px 20px 0;
+	}
+	/* * Area  Work */
+	.content .workBox {
+		width: 365px;
+	}
 }
 @media screen and (max-width: 600px) {
 	section {
 		padding: 100px 20px;
 	}
 	header, header.sticky {
-		padding: 20px 50px;
+		padding: 20px 20px;
 	}
 	.banner {
 		background: none;
 		background-color: #cdcdcf;
-		padding: 150px 20px 100px;
+		/*padding: 150px 20px 100px;*/
 	}
 	.banner .textBox {
 		padding: 20px;
 	}
 	.banner .textBox h2 {
+		font-size: 1.3em;
+	}
+	.banner .textBox h3 {
 		font-size: 1.1em;
 	}
 	.banner .textBox h2 .span2 {
