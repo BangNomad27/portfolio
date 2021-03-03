@@ -20,7 +20,7 @@ header {
 	position: fixed;
 	top: 0;
 	left: 0;
-	/*right: 0;*/
+	right: 0;
 	width: 100%;
 	padding: 40px 100px;
 	display: flex;
@@ -245,10 +245,10 @@ header.sticky ul li a:hover::after {
 	transition: 1s;
 }
 .slider-left {
-	transform: translate(-50px, 0) rotate(15deg);
+	transform: translate(0, -50px) /*rotate(15deg)*/;
 }
 .slider-right {
-	transform: translate(50px, 0) rotate(-15deg);
+	transform: translate(0, 50px) /*rotate(-15deg)*/;
 }
 .slider-left.slider, .slider-right.slider {
 	opacity: 1;
@@ -527,7 +527,7 @@ footer {
 		color: #fff;
 		cursor: pointer;
 	}
-	/* ! Area Main Section */
+	/* ! Area Main */
 	.banner {
 		padding: 150px 50px 100px;
 	}
@@ -548,6 +548,9 @@ footer {
 	.content .aboutBox {
 		margin-left: 0;
 	}
+	.content .aboutBox h2 {
+		font-size: 18px;
+	}
 	.content .aboutBox p {
 		font-size: 1rem;
 	}
@@ -557,10 +560,6 @@ footer {
 	/* * Area Skills */
 	.content .skillBox {
 		margin: 0 20px 20px 0;
-	}
-	/* * Area  Work */
-	.content .workBox {
-		width: 365px;
 	}
 }
 @media screen and (max-width: 600px) {
@@ -573,7 +572,7 @@ footer {
 	.banner {
 		background: none;
 		background-color: #cdcdcf;
-		/*padding: 150px 20px 100px;*/
+		padding: 150px 20px 100px;
 	}
 	.banner .textBox {
 		padding: 20px;
