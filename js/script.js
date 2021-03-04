@@ -22,6 +22,7 @@ menu.onclick = toggleMenu;
 // ! ===== Area Parallax =====
 $(window).scroll(function() {
 	let skillScroll = $(this).scrollTop();
+	let landingScroll = $(this).scrollTop();
 
 	if(skillScroll > $('.skills').offset().top - 400) {
 		$('.skills .slider-left, .slider-right').each(function(el) {
@@ -30,11 +31,20 @@ $(window).scroll(function() {
 			}, 300 * (el + 1));
 		});
 	}
+
+
+	if(landingScroll > $('.work').offset().top - 400) {
+		$('.work .thumbnail').each(function(i) {
+			setTimeout(function() {
+				$('.work .thumbnail').eq(i).addClass('drop');
+			}, 300 * (i + 1));
+		});
+	}
 });
 
 // ! ===== Area Typing Animation =====
 let typed1 = new Typed(".typing1", {
-	strings: ["Mahasiswa", "Web Developer", "Web Design", "Gamer", "Blogger"],
+	strings: ["College Student", "Web Developer", "Web Design", "Gamer", "Blogger"],
 	typeSpeed: 100,
 	backSpeed: 60,
 	loop: true
