@@ -147,7 +147,12 @@ header.sticky ul li a:hover::after {
 	transform: scale(.7);
 	opacity: .7;
 }
-.icon li img:hover {
+.icon li a.fab {
+	font-size: 30px;
+	opacity: .7;
+	color: #111;
+}
+.icon li img:hover, .icon li a.fab:hover {
 	opacity: 1;
 }
 /* ! Area About */
